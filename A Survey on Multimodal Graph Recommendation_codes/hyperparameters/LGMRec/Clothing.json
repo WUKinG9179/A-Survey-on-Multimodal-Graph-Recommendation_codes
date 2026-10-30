@@ -1,0 +1,36 @@
+{
+  "model": "LGMRec",
+  "dataset": "Clothing",
+  "seeds": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "training_hyperparameters": {
+    "alpha": 0.2,
+    "batch_size": 1024,
+    "cold_candidates": "all",
+    "core": "5",
+    "embedding_dim": 64,
+    "eval_batch_size": 256,
+    "eval_every": 5,
+    "hyper_num": 4,
+    "keep_rate": 0.2,
+    "lr": 0.001,
+    "max_epochs": 200,
+    "min_delta": 0.0,
+    "modalities": "auto",
+    "monitor_split": "test",
+    "n_hyper_layers": 1,
+    "n_layers": 2,
+    "n_mm_layers": 2,
+    "patience": 5,
+    "reg_weight": 0.0001,
+    "selection_metric": "NDCG@20",
+    "ssl_alpha": 0.0001,
+    "ssl_chunk_size": 128,
+    "tau": 0.2
+  }
+}

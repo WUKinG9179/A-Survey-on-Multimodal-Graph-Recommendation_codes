@@ -1,0 +1,42 @@
+{
+  "model": "MGCE",
+  "dataset": "Sports",
+  "seeds": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "training_hyperparameters": {
+    "base_exponent": -0.4,
+    "base_layers": 4,
+    "batch_size": 1024,
+    "cold_candidates": "all",
+    "conformity_exponent": -0.5,
+    "conformity_layers": 2,
+    "core": "5",
+    "eit": 0.3,
+    "embedding_dim": 64,
+    "eval_batch_size": 256,
+    "eval_every": 5,
+    "interest_exponent": -0.3,
+    "interest_layers": 1,
+    "lambda_m": 0.5,
+    "lr": 0.001,
+    "max_epochs": 1000,
+    "min_delta": 0.0,
+    "mju_emb": 0.1,
+    "mju_mf": 0.3,
+    "modalities": "auto",
+    "monitor_split": "test",
+    "patience": 5,
+    "pop_buckets": 3,
+    "reg_weight": 0.0001,
+    "selection_metric": "NDCG@20",
+    "zca_epsilon": 1e-05,
+    "output_fusion": "projection"
+  },
+  "final_recommendation_dimension": 64,
+  "implementation_variant": "MGCE-Projected64"
+}

@@ -1,0 +1,34 @@
+{
+  "model": "GRCN",
+  "dataset": "Tiktok",
+  "seeds": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "training_hyperparameters": {
+    "aggr_mode": "mean",
+    "batch_size": 1024,
+    "cold_candidates": "all",
+    "content_dim": 64,
+    "core": "5",
+    "dropout": 0.1,
+    "embedding_dim": 64,
+    "eval_batch_size": 256,
+    "eval_every": 5,
+    "fusion_mode": "mean",
+    "lr": 0.001,
+    "max_epochs": 1000,
+    "min_delta": 0.0,
+    "modalities": "auto",
+    "monitor_split": "test",
+    "no_pruning": false,
+    "num_routing": 2,
+    "patience": 5,
+    "reg_weight": 0.0001,
+    "selection_metric": "NDCG@20",
+    "weight_mode": "confid"
+  }
+}

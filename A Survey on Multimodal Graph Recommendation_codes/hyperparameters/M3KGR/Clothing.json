@@ -1,0 +1,38 @@
+{
+  "model": "M3KGR",
+  "dataset": "Clothing",
+  "seeds": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "training_hyperparameters": {
+    "batch_size": 1024,
+    "cold_candidates": "all",
+    "core": "5",
+    "edge_dropout": 0.1,
+    "embedding_dim": 64,
+    "eval_batch_size": 256,
+    "eval_every": 5,
+    "feature_dropout": 0.1,
+    "lr": 0.001,
+    "max_epochs": 200,
+    "min_delta": 0.0,
+    "modalities": "auto",
+    "momentum": 0.999,
+    "momentum_weight": 0.01,
+    "monitor_split": "test",
+    "n_layers": 2,
+    "negative_strength": 5.0,
+    "negative_threshold": 0.8,
+    "patience": 5,
+    "queue_size": 4096,
+    "reg_weight": 0.0001,
+    "selection_metric": "NDCG@20",
+    "ssl_weight": 0.01,
+    "temperature": 0.2
+  },
+  "implementation_variant": "M3KGR-NoKG"
+}

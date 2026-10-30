@@ -1,0 +1,33 @@
+{
+  "model": "MSCA",
+  "dataset": "Clothing",
+  "seeds": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "training_hyperparameters": {
+    "batch_size": 1024,
+    "cl_weight": 0.005,
+    "cold_candidates": "all",
+    "core": "5",
+    "embedding_dim": 64,
+    "eval_batch_size": 256,
+    "eval_every": 5,
+    "fusion_coeff": 0.3,
+    "graph_block_size": 256,
+    "ii_topk": 10,
+    "lr": 0.001,
+    "max_epochs": 200,
+    "min_delta": 0.0,
+    "modalities": "auto",
+    "monitor_split": "test",
+    "n_layers": 3,
+    "patience": 5,
+    "reg_weight": 0.0001,
+    "selection_metric": "NDCG@20",
+    "tau": 0.2
+  }
+}

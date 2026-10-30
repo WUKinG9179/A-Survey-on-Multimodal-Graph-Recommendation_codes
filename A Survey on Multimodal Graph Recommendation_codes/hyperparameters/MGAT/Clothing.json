@@ -1,0 +1,32 @@
+{
+  "model": "MGAT",
+  "dataset": "Clothing",
+  "seeds": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "training_hyperparameters": {
+    "audio_dim": 128,
+    "batch_size": 1024,
+    "cold_candidates": "all",
+    "core": "5",
+    "embedding_dim": 64,
+    "eval_batch_size": 256,
+    "eval_every": 5,
+    "layer_fusion": "mean",
+    "layers": 3,
+    "lr": 0.001,
+    "max_epochs": 1000,
+    "min_delta": 0.0,
+    "modalities": "auto",
+    "monitor_split": "test",
+    "patience": 5,
+    "reg_weight": 0.0001,
+    "selection_metric": "NDCG@20",
+    "text_dim": 100,
+    "visual_dim": 256
+  }
+}

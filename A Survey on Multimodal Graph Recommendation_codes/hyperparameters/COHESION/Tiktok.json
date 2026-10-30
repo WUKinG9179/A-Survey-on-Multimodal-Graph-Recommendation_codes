@@ -1,0 +1,36 @@
+{
+  "model": "COHESION",
+  "dataset": "Tiktok",
+  "seeds": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "training_hyperparameters": {
+    "batch_size": 1024,
+    "cold_candidates": "all",
+    "core": "5",
+    "detach_id_branch": false,
+    "dimension_mode": "total",
+    "edge_dropout": 0.0,
+    "embedding_dim": 64,
+    "eval_batch_size": 256,
+    "eval_every": 5,
+    "graph_block_size": 256,
+    "ii_topk": 10,
+    "image_weight": 0.1,
+    "lr": 0.001,
+    "max_epochs": 200,
+    "min_delta": 0.0,
+    "modalities": "auto",
+    "monitor_split": "test",
+    "n_layers": 2,
+    "n_mm_layers": 1,
+    "patience": 5,
+    "reg_weight": 0.0001,
+    "selection_metric": "NDCG@20",
+    "uu_topk": 40
+  }
+}

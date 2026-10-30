@@ -1,0 +1,31 @@
+{
+  "model": "DualGNN",
+  "dataset": "Tiktok",
+  "seeds": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "training_hyperparameters": {
+    "aggr_mode": "add",
+    "batch_size": 1024,
+    "cold_candidates": "all",
+    "construction": "weighted_sum",
+    "core": "5",
+    "embedding_dim": 64,
+    "eval_batch_size": 256,
+    "eval_every": 5,
+    "lr": 0.001,
+    "max_epochs": 200,
+    "min_delta": 0.0,
+    "modalities": "auto",
+    "monitor_split": "test",
+    "patience": 5,
+    "reg_weight": 0.0001,
+    "selection_metric": "NDCG@20",
+    "user_aggr_mode": "softmax",
+    "uu_topk": 40
+  }
+}

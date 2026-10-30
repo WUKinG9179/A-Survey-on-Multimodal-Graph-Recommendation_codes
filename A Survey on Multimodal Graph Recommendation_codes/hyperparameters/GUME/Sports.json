@@ -1,0 +1,39 @@
+{
+  "model": "GUME",
+  "dataset": "Sports",
+  "seeds": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "training_hyperparameters": {
+    "alignment_weight": 0.1,
+    "batch_size": 1024,
+    "bm_temp": 0.4,
+    "bm_weight": 0.01,
+    "cold_candidates": "all",
+    "core": "5",
+    "embedding_dim": 64,
+    "eval_batch_size": 256,
+    "eval_every": 5,
+    "extended_reg_weight": 0.1,
+    "freeze_features": false,
+    "graph_block_size": 256,
+    "ii_topk": 10,
+    "lr": 0.001,
+    "max_epochs": 200,
+    "min_delta": 0.0,
+    "modalities": "auto",
+    "monitor_split": "test",
+    "n_layers": 2,
+    "n_ui_layers": 3,
+    "noise_scale": 0.1,
+    "patience": 5,
+    "reg_weight": 0.0001,
+    "selection_metric": "NDCG@20",
+    "um_temp": 0.1,
+    "um_weight": 0.01
+  }
+}
